@@ -1,0 +1,241 @@
+.header {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    padding-top: 3.125rem;
+    overflow: hidden;
+    
+    &__inner {
+        position: relative;
+        padding-bottom: 3.75rem;
+        &::before {
+            position: absolute;
+            content: "";
+            left: 78px;
+            bottom: -117px;
+            width: 531px;
+            height: 467px;
+            background: url('../images/dist/menu-bg.png') bottom left no-repeat;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2.5rem;
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 3;
+        flex-shrink: 0;
+
+        img {
+            width: 15rem;
+        }
+    }
+
+    &__content {
+        width: 100%;
+    }
+
+    &__languages {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 1.25rem;
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+
+        span {
+            display: inline-block;
+            margin-top: 3px;
+        }
+        
+        img {
+            flex-shrink: 0;
+            margin-left: 7px;
+        }
+
+        li + li {
+            display: inline-block;
+            margin-left: 1.25rem;
+        }
+    }
+
+    &__main {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navigation {
+        margin: 0 auto;
+
+        ul {
+            display: flex;
+            align-items: center;
+        }
+
+        li {
+            transition: .2s ease;
+        }
+        
+        li + li {
+            margin-left: 1.25rem;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: block;
+        }
+
+        li + li {
+            margin-left: 1.5625rem;
+        }
+    }
+
+    &__search {
+        position: relative;
+        margin-left: 1.875rem;
+
+        label {
+            display: block;
+            cursor: pointer;
+        }
+    
+        img {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2.5rem;
+            height: 2.5rem;
+            background: url('../images/dist/search.png') center / cover no-repeat;
+        }
+
+        input {
+            color: #ffffff;
+            display: block;
+            border: none;
+            width: 230px;
+            height: 65px;
+            border-radius: 50px;
+            background-color: #512824;
+            padding: 0.625rem;
+            padding-left: 4.6875rem;
+        }
+    }
+
+    &__login {
+
+        a + a {
+            margin-left: 2.1875rem;
+        }
+    }
+
+    &__sign-in {
+        text-shadow: 0px 0px 10px #FFFFFF;
+        transition: .2s ease;
+    }
+
+    &__sign-up {
+        text-shadow: 0px 0px 15px $accent;
+        color: $accent;
+        transition: .2s ease;
+    }
+
+    &__bottom {
+        background-color: $accent;
+        box-shadow: 0px 8px 48.14px 9.86px rgba(0, 0, 0, 0.44);
+    }
+
+    &__bottom-navigation {
+        ul {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 2.1875rem 0;
+        }
+        li {
+            transition: .2s ease;
+        }
+        li + li {
+            margin-left: 1.5625rem;
+        }
+    }
+
+    &__menu {
+        display: none;
+    }
+
+    &__menu-btn {
+        width: 32px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        margin-left: auto;
+
+        span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            margin-bottom: 5px;
+            border-radius: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__btn-wrapper {
+        text-align: right;
+    }
+
+    &__menu-close {
+        display: block;
+        position: fixed;
+        right: 30px;
+        top: 30px;
+        background-color: transparent;
+        border: none;
+        font-size: 36px;
+        color: #fff;
+        padding: 5px;
+    }
+
+    &__menu-content {
+        overflow: auto;
+        padding: 30px;
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $bg;
+        z-index: 10;
+
+        &.open {
+            display: block;
+        }
+    }
+}
+
