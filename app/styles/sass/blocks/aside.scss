@@ -1,0 +1,51 @@
+.rating {
+    width: 350px;
+    margin-left: 50px;
+    flex-shrink: 0;
+    font-size: 1rem;
+    padding-top: 130px;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 3.125rem;
+        text-align: right;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #2d3343;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            height: 100%;
+            width: 200vw;
+            right: calc(-200vw + 5px);
+            background-color: #2d3343;
+        }
+    }
+
+    &__name {
+        margin-right: 10px;
+    }
+
+    &__stars {
+        margin-right: 15px;
+        margin-left: auto;
+    }
+
+    &__btn {
+        display: inline-block;
+        background-color: $accent;
+        font-weight: 500;
+        padding: 12px 20px;
+        border-radius: 50px;
+        text-transform: uppercase;
+    }
+}

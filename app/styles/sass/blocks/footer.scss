@@ -1,6 +1,8 @@
 .footer {
     padding: 85px 0;
     background-color: #2d3343;
+    font-size: 16px;
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -27,19 +29,22 @@
 
     &__text {
         max-width: 460px;
+        margin-bottom: 40px;
         p {
             margin-bottom: 20px;
         }
     }
 
-    &__logo {
+    &__copy {
+        margin-bottom: 15px;
     }
 
     &__bottom {
+        flex-wrap: wrap;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 90px;
+        margin-top: 5.625rem;
     }
 
     &__notification {

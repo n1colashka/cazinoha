@@ -1,4 +1,7 @@
 @media (min-width: 1025px) {
+    .footer li:hover {
+        text-decoration: underline;
+    }
     .header {
         &__navigation li:hover {
             text-shadow: 0px 0px 10px #FFFFFF;
@@ -33,26 +36,38 @@
 }
 
 @media (max-width: 1280px) {
-    .header__icons {
-        margin-right: 20px;
-        margin-left: 20px;
-        flex-shrink: 0;
+    .games {
+        &__item {
+            width: calc(25% - 30px);
+        }
     }
-    .header__search {
-        flex-shrink: 0;
-    }
-    .header__search input {
-        width: 200px;
-    }
-    .header__socials img {
-        width: 80%;
-    }
-    .header__navigation {
-        margin-right: 20px;
-        margin-left: 20px;
+    .header {
+        &__icons {
+            margin-right: 20px;
+            margin-left: 20px;
+            flex-shrink: 0;
+        }
+        &__search {
+            flex-shrink: 0;
+        }
+        &__search input {
+            width: 200px;
+        }
+        &__socials img {
+            width: 80%;
+        }
+        &__navigation {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
     }
 }
 @media (max-width: 1200px) {
+    .games {
+        &__item {
+            width: calc(33.333% - 30px);
+        }
+    }
     .header__inner {
         &::before {
             bottom: -159px;
@@ -62,6 +77,38 @@
 
 
 @media (max-width: 1024px) {
+    .page-wrapper {
+        &__inner {
+            flex-direction: column;
+        }
+    }
+    .rating {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        &__title {
+            text-align: left;
+            display: block;
+            width: 100%;
+        }
+    }
+    .games {
+        &__btn-wrapper {
+            text-align: center;
+            margin-right: 0;
+        }
+        &__list {
+            margin-bottom: 40px;
+        }
+        &__item {
+        }
+        &__img {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
     .header {
         font-size: 18px;
         padding-top: 20px;
@@ -140,6 +187,9 @@
 
 
 @media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
     .footer {
         padding: 45px 0;
         &__bottom {
@@ -153,7 +203,12 @@
 
 
 @media (max-width: 480px) {
-    
+    .games {
+        &__item {
+            width: calc(50% - 30px);
+            margin-bottom: 30px;
+        }
+    }
     .footer__inner {
         flex-wrap: wrap;
         flex-direction: column;
