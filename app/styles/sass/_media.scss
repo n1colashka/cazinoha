@@ -126,7 +126,42 @@
     }
 }
 
+@media (max-width: 900px) {
+    .footer__inner {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .footer__col {
+        width: calc(50% - 50px);
+        max-width: 100%;
+    }
+}
+
+
 
 @media (max-width: 768px) {
+    .footer {
+        padding: 45px 0;
+        &__bottom {
+            margin-top: 40px;
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    .footer__inner {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: -15px 0;
+    }
+    .footer__col {
+        width: 100%;
+        margin: 15px 0;
+    }
 }
 

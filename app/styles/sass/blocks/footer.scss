@@ -1,0 +1,50 @@
+.footer {
+    padding: 85px 0;
+    background-color: #2d3343;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: -25px;
+    }
+
+    &__col {
+        margin: 25px;
+
+        li {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: $accent;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        max-width: 460px;
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__logo {
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 90px;
+    }
+
+    &__notification {
+        span {
+            color: $accent;
+        }
+    }
+}
