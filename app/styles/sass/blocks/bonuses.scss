@@ -1,0 +1,139 @@
+.bonuses {
+    padding-top: 30px;
+
+    &__inner {
+    background: url('../images/dist/bonuses-bg.png') bottom center / cover no-repeat;
+    padding-bottom: 132px;
+
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        background-color: rgb(31, 42, 69);
+        box-shadow: 0px 8px 48.14px 9.86px rgba(0, 0, 0, 0.44);
+        margin-bottom: 30px;
+        min-height: 7.1875rem;
+        padding: 10px 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 260px;
+        margin-right: 20px;
+    }
+
+    &__item-title {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__promocode {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #ffffff;
+        border: 5px solid #ffffff;
+        padding: 3px 15px;
+        border-radius: 50px;
+        margin-left: auto;
+        margin-right: 30px;
+
+        span {
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        input {
+            display: block;
+            font-weight: 500;
+            background-color: transparent;
+            color: #ffffff;
+            border: none;
+            margin-left: 3.75rem;
+        }
+    }
+
+    &__promocode--red {
+        color: #fb2648;
+        border-color: #fb2648;
+    }
+
+    &__promocode--green {
+        color: #96e100;
+        border-color: #96e100;
+    }
+
+    &__btn {
+        display: inline-block;
+        border-radius: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: $accent;
+        padding: 10px 15px;
+        transition: .2s ease;
+    }
+
+    &__promocode-text {
+        color: $accent;
+        font-size: 1.25rem;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    &__subscribe {
+        margin: 6.25rem 0;
+    }
+
+    
+}
+
+.subscribe {
+    background-color: $accent;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img {
+        margin-top: -50px;
+        margin-bottom: -50px;
+        flex-shrink: 0;
+    }
+
+    &__text {
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+        font-weight: 600;
+        margin-left: 8.125rem;
+        margin-right: 6.875rem;
+        padding: 45px 0;
+    }
+
+    &__btn {
+        font-size: 2rem;
+        border-width: 6px;
+        color: #ffffff;
+        border-color: #fff;
+    }
+}

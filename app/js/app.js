@@ -21,5 +21,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    function initCopyPromocode() {
+        const promocodes = document.querySelectorAll('.bonuses__promocode');
+
+        promocodes.forEach(code => {
+            code.addEventListener('click', () => {
+                
+                const str = code.querySelector('input').value;
+                const el = document.createElement('input');
+                el.value = str;
+                el.setAttribute('readonly', '');
+                el.style.position = 'absolute';
+                el.style.left = '-9999px';
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+            })
+        })
+    }
+
+
     initMenu();
+    initCopyPromocode();
 })
