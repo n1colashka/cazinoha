@@ -3,7 +3,7 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
 
-    .container {
+    &__container {
         max-width: 1270px;
     }
 
@@ -12,6 +12,14 @@
         &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 1.875rem;
+        text-transform: uppercase;
     }
 
     p {

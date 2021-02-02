@@ -41,7 +41,41 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    function initArticlesSlider() {
+        if (document.querySelector('.articles-slider')) {
+            const swiper = new Swiper('.articles-slider__inner', {
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+                spaceBetween: 40,
+                navigation: {
+                    nextEl: '.articles-slider__next',
+                    prevEl: '.articles-slider__prev',
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    641: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                }
+            });
+        }
+        
+        }
 
+
+    initArticlesSlider();
     initMenu();
     initCopyPromocode();
 })

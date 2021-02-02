@@ -30,7 +30,7 @@
 		"gulp-stylus": "^2.7.0",
 		"jquery": "^3.5.1",
 		"rangeslider-pure": "^0.4.11",
-		"swiper": "^6.4.5",
+		"swiper": "^6.4.10",
 		"webpack-stream": "^6.1.1"
 	}
 }
