@@ -240,6 +240,26 @@
 
 
 @media (max-width: 768px) {
+    .text {
+        ul {
+            padding-left: 10px;
+        }
+
+        padding-bottom: 5rem;
+        &__box {
+            margin-bottom: 4rem;
+        }
+    }
+    .bonuses {
+        padding-bottom: 50px;
+        background: none;
+    }
+    .bonuses__subscribe {
+        margin: 3.25rem 0;
+    }
+    .bonuses__inner {
+        padding-bottom: 0;
+    }
     .subscribe {
         &__text {
             margin-left: 0;
@@ -264,6 +284,10 @@
 
 
 @media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
     .bonuses {
         &__promocode {
             span {
