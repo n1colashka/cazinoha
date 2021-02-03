@@ -125,3 +125,106 @@ a {
 		overflow: hidden
 	} 
 }
+
+.tags {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 500;
+	padding: 25px 0;
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: -20px;
+		margin-left: -1.3125rem;
+		margin-right: -1.3125rem;
+
+	}
+
+	li.active {
+		color: $accent;
+		border-color: $accent;
+	}
+
+	li {
+		border: 2px solid #fff;
+		border-radius: 17px;
+		transition: .2s ease;
+		margin-bottom: 20px;
+		margin-left: 1.3125rem;
+		margin-right: 1.3125rem;
+	}
+
+	a {
+		display: block;
+		padding: 7px 15px;
+	}
+}
+
+.pagination {
+	font-size: 16px;
+	line-height: 18px;
+	padding-top: 25px;
+	padding-bottom: 40px;
+
+	ul {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	
+	li + li {
+		margin-left: 15px;
+	}
+
+	li.active {
+		font-weight: 700;
+		color: $accent;
+	}
+
+	.pagination__next {
+		margin-left: 1.875rem;
+
+		a {
+			display: flex;
+			align-items: center;
+		}
+
+		img {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.pagination--bottom {
+	ul {
+		justify-content: flex-end;
+	}
+}
+
+
+
+.showcase-page {
+    .games__list {
+        margin-bottom: -35px;
+	}
+	
+	.text {
+		padding-bottom: 8.75rem;
+	}
+
+    .text__inner {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: -6.25rem;
+
+		.text__box {
+			width: 45%;
+		}
+	}
+
+	.text p + p {
+		margin-top: 1.5625rem;
+	}
+}

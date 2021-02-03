@@ -1,4 +1,8 @@
 @media (min-width: 1025px) {
+    .tags li:hover {
+        color: $accent;
+        border-color: $accent;
+    }
     .footer li:hover {
         text-decoration: underline;
     }
@@ -149,6 +153,12 @@
 }
 
 @media (max-width: 1024px) {
+    .showcase-page {
+        
+        .text {
+            padding-top: 40px;
+        }
+    }
     .share {
         &__socials {
             margin-top: 30px;
@@ -276,7 +286,36 @@
 
 
 @media (max-width: 768px) {
+    .tags {
+        ul {
+            margin-left: -0.625rem;
+            margin-right: -0.625rem;
+        }
     
+        li {
+            margin-left: 0.625rem;
+            margin-right: 0.625rem;
+        }
+    }
+    .showcase-page {
+        
+        .text {
+            padding-bottom: 5.75rem;
+        }
+    
+        .text__inner {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+    
+            .text__box {
+                width: 100%;
+            }
+        }
+    
+        .text p + p {
+            margin-top: 1.5625rem;
+        }
+    }
     .blog__rect {
         padding: 1.5rem;
     }

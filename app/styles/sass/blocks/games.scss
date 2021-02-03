@@ -24,7 +24,9 @@
 
     &__item {
         width: calc(20% - 30px);
-        margin-bottom: 50px;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-bottom: 3.125rem;
         margin-left: 15px;
         margin-right: 15px;
         a {
@@ -42,14 +44,9 @@
         }
     }
 
-    &__name {
-    }
-
     &__btn-wrapper {
         margin-right: 10rem;
         text-align: right;
     }
 
-    &__btn {
-    }
 }
