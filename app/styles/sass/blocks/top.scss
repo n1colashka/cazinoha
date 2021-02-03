@@ -1,0 +1,49 @@
+.top {
+    padding-bottom: 7.5rem;
+
+    &__title {
+        margin-bottom: 15px;
+        margin-left: 25px;
+    }
+
+    &__container {
+        max-width: 1300px;
+    }
+
+    &__table {
+        min-width: 500px;
+        overflow: auto;
+        table {
+            font-size: 1rem;
+            line-height: 1.125rem;
+            border-spacing:  0 10px;
+        }
+        thead {
+            margin-bottom: 15px;
+            border-spacing:  0 20px;
+        }
+
+        td {
+            background-color: #464c59;
+        }
+
+        th {
+            background-color: #732d1d;
+            text-align: left;
+            font-weight: 400;
+        }
+
+
+        td, th {
+            padding: 15px 21px;
+
+            &:first-child {
+                border-radius: 5px 0 0 5px;
+                width: 15.625rem;
+            }
+            &:last-child {
+                border-radius: 0 5px 5px 0 ;
+            }
+        }
+    }
+}

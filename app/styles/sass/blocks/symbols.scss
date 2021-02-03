@@ -1,0 +1,45 @@
+.symbols {
+    padding-bottom: 4.375rem;
+
+    &__title {
+        margin-bottom: 3.4375rem;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -1.875rem -4rem;
+        margin-top: 0;
+    }
+
+    &__item {
+        width: calc(16.666% - 8rem);
+        margin-bottom: 1.875rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    &__item-title {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-bottom: 15px;
+    }
+
+    &__img {
+        margin-bottom: 15px;
+        img {
+            border-radius: 6px;
+        }
+    }
+
+    &__table {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+
+        table {
+            width: 100%;
+        }
+    }
+}

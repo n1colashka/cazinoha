@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function initArticlesSlider() {
         if (document.querySelector('.articles-slider')) {
             const swiper = new Swiper('.articles-slider__inner', {
+                loop: true,
                 slidesPerView: 3,
                 slidesPerGroup: 1,
                 spaceBetween: 40,
@@ -73,6 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         }
+
+        
 
 
     initArticlesSlider();

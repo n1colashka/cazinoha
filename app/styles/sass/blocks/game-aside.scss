@@ -1,0 +1,26 @@
+.game-aside {
+    width: 270px;
+    flex-shrink: 0;
+
+    &__img {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin-bottom: 4.375rem;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &__info {
+        font-size: 16px;
+        li {
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        strong {
+            font-weight: 700;
+        }
+    }
+}

@@ -60,6 +60,19 @@
 }
 
 @media (max-width: 1280px) {
+    .symbols {
+        &__list {
+            margin: -1.875rem -2rem;
+            margin-top: 0;
+            padding: 0 10px;
+        }
+    
+        &__item {
+            width: calc(16.666% - 4rem);
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+    }
     .blog {
         &__banner::after {
             top: 2.5rem;
@@ -153,6 +166,34 @@
 }
 
 @media (max-width: 1024px) {
+    .video {
+        iframe {
+            height: 350px;
+        }
+    }
+    .game {
+        padding-bottom: 4rem;
+        &__content {
+            margin-left: 0;
+        }
+    }
+    .game-aside {
+        padding-bottom: 50px;
+        width: 100%;
+        &__title {
+            margin-bottom: 2.5rem;
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__info {
+            font-size: 14px;
+        }
+    }
+    .game-page {
+        .page-wrapper__inner {
+            flex-direction: column-reverse;
+        }
+    }
     .showcase-page {
         
         .text {
@@ -273,6 +314,18 @@
 }
 
 @media (max-width: 900px) {
+    .symbols {
+        &__list {
+            margin: -1.875rem -2rem;
+            margin-top: 0;
+        }
+    
+        &__item {
+            width: calc(20% - 4rem);
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+    }
     .footer__inner {
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -286,6 +339,45 @@
 
 
 @media (max-width: 768px) {
+    .images-slider {
+        padding-bottom: 2rem;
+    }
+    .video {
+        padding-bottom: 4rem;
+    }
+    .top {
+        padding-bottom: 4rem;
+        &__table {
+            td, th {
+                padding: 12px; 
+            }
+        }
+    }
+    .symbols {
+        &__list {
+            margin: -1.875rem -1rem;
+            margin-top: 0;
+        }
+    
+        &__item {
+            width: calc(25% - 2rem);
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+    .game {
+        padding-bottom: 2rem;
+    }
+    .clubs {
+        padding-bottom: 3rem;
+        &__list {
+            margin: -1rem;
+        }
+        &__item {
+            margin: 1rem;
+            width: calc(100% - 2rem);
+        }
+    }
     .tags {
         ul {
             margin-left: -0.625rem;
@@ -380,6 +472,16 @@
 
 
 @media (max-width: 480px) {
+    .video {
+        iframe {
+            height: 250px;
+        }
+    }
+    .symbols {
+        &__item {
+            width: calc(33.333% - 2rem);
+        }
+    }
     .share__btn-wrapper {
         margin-top: 2.5rem;
     }
@@ -434,3 +536,16 @@
     }
 }
 
+@media (max-width: 400px) {
+    .clubs {
+        &__list {
+            margin: 0;
+            flex-direction: column;
+        }
+        &__item {
+            margin: 0;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+    }
+}
