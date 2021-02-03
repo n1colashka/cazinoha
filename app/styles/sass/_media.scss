@@ -41,7 +41,7 @@
         }
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
     .articles-slider__next {
         right: -60px;
     }
@@ -49,12 +49,22 @@
         left: -60px;
     }
     html {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 11px;
+        line-height: 15px;
     }
     .bonuses {
+        &__item-title {
+            font-size: 1.25rem;
+            margin-left: 0;
+        }
         &__promocode-text {
-            font-size: 18px;
+            font-size: 1.125rem;
+        }
+        &__promocode span {
+            font-size: 1.125rem;
+        }
+        &__btn {
+            font-size: 1.125rem;
         }
     }
 }
