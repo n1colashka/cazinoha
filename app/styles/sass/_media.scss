@@ -166,6 +166,25 @@
 }
 
 @media (max-width: 1024px) {
+    .top__title {
+        margin-left: 0;
+    }
+    .providers-page .text {
+        padding-top: 4rem;
+    }
+    .providers {
+        &__item {
+            width: 48%;
+            font-size: 15px;
+            line-height: 18px;
+
+            input, select {
+                font-size: 15px;
+                line-height: 18px;
+                padding: .5rem 2rem;
+            }
+        }
+    }
     .video {
         iframe {
             height: 350px;
@@ -336,8 +355,6 @@
     }
 }
 
-
-
 @media (max-width: 768px) {
     .images-slider {
         padding-bottom: 2rem;
@@ -470,6 +487,26 @@
     }
 }
 
+@media (max-width: 580px) {
+    .providers {
+        &__form {
+            margin-bottom: 3.125rem;
+        }
+        &__title {
+            margin-bottom: 2.5rem;
+        }
+        form {
+            flex-direction: column;
+            span {
+                margin-left: 0;
+            }
+        }
+        &__item {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
 
 @media (max-width: 480px) {
     .video {

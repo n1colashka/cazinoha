@@ -1,0 +1,85 @@
+.providers-page {
+    .container {
+        max-width: 1300px;
+    }
+    .text {
+        padding-top: 6.875rem;
+        padding-bottom: 0;
+    }
+    .text__box {
+        margin-bottom: 3.125rem;
+    }
+    .text__title {
+        margin-bottom: 2.5rem;
+    }
+
+    .games__btn-wrapper {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .games__list {
+        margin-bottom: 1rem;
+    }
+}
+
+.providers {
+    &__form {
+        margin-bottom: 6.875rem;
+    }
+    &__title {
+        margin-bottom: 3.75rem;
+    }
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+    }
+    &__item {
+        width: 46%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__item-select {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            right: 50px;
+            top: 50%;
+            width: 54px;
+            height: 5px;
+            transform: translateY(-50%) rotate(180deg);
+            background: url('../images/dist/arrow.png') center no-repeat;
+        }
+    }
+
+    input, select {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        padding: 0.9375rem 3.75rem;
+        border-radius: 33px;
+        border: 6px solid #fff;
+        color: #ffffff;
+        background-color: #2d3343;
+        text-transform: uppercase;
+        outline: transparent;
+    }
+
+    select {
+        appearance: none;
+        padding-right: 115px;
+    }
+
+}
