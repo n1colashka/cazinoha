@@ -166,6 +166,17 @@
 }
 
 @media (max-width: 1024px) {
+    .roulette-page {
+        .text {
+            padding-bottom: 1rem;
+        }
+        .rating {
+            padding-bottom: 30px;
+        }
+        .top {
+            padding-top: 40px;
+        }
+    }
     .top__title {
         margin-left: 0;
     }
@@ -509,6 +520,9 @@
 }
 
 @media (max-width: 480px) {
+    .pagination ul {
+        justify-content: center;
+    }
     .video {
         iframe {
             height: 250px;

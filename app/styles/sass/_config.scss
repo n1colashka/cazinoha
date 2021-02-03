@@ -175,7 +175,7 @@ a {
 	}
 	
 	li + li {
-		margin-left: 15px;
+		margin-left: 0.9375rem;
 	}
 
 	li.active {
@@ -193,6 +193,15 @@ a {
 
 		img {
 			transform: rotate(180deg);
+		}
+	}
+
+	.pagination__prev {
+		margin-right: 0.9375rem;
+
+		a {
+			display: flex;
+			align-items: center;
 		}
 	}
 }
