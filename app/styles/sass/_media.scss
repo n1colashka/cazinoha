@@ -1,4 +1,20 @@
 @media (min-width: 1025px) {
+    .games {
+        &__img:hover {
+            &::before {
+                background-color: rgba(#000, .7);
+            }
+            .games__btn {
+                opacity: 1;
+            }
+            .games__btn--demo {
+                top: 50px;
+            }
+            .games__btn--play {
+                bottom: 50px;
+            }
+        }
+    }
     .tags li:hover {
         color: $accent;
         border-color: $accent;
@@ -192,6 +208,22 @@
 }
 
 @media (max-width: 1024px) {
+    .games {
+        &__img {
+            &::before {
+                background-color: rgba(#000, .7);
+            }
+            .games__btn {
+                opacity: 1;
+            }
+            .games__btn--demo {
+                top: 50px;
+            }
+            .games__btn--play {
+                bottom: 50px;
+            }
+        }
+    }
     .video__box {
         height: 450px;
     }
@@ -292,6 +324,8 @@
             text-align: left;
             display: block;
             width: 100%;
+            margin-left: 0;
+            max-width: 100%;
         }
     }
     .games {
@@ -302,8 +336,7 @@
         &__list {
             margin-bottom: 40px;
         }
-        &__item {
-        }
+        
         &__img {
             img {
                 width: 100%;
@@ -535,6 +568,22 @@
         }
         &__title {
             margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .games {
+        &__img {
+            .games__btn {
+                width: 100px;
+            }
+            .games__btn--demo {
+                top: 25px;
+            }
+            .games__btn--play {
+                bottom: 25px;
+            }
         }
     }
 }

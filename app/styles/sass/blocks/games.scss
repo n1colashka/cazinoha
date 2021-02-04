@@ -29,18 +29,60 @@
         margin-bottom: 3.125rem;
         margin-left: 15px;
         margin-right: 15px;
-        a {
-            display: block;
+        // a {
+        //     display: block;
+        // }
+    }
+
+    &__btn {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border: 2px solid $accent;
+        border-radius: 5px;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        opacity: 0;
+        transition: .3s ease;
+
+        &--demo {
+            border-color: #b425c5;
+            top: -100%;
+        }
+
+        &--play {
+            background-color: $accent;
+            bottom: -100%;
         }
     }
 
+    &__name {
+        display: block;
+    }
+
     &__img {
+        position: relative;
+        overflow: hidden;
         margin-bottom: 25px;
         img {
             border-radius: 7px;
             display: flex;
             width: 100%;
             height: 210px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000, 0);
+            transition: .3s ease;
         }
     }
 
