@@ -75,10 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
         
         }
 
-        
+        function initYoutubeModal() {
+            if (document.querySelector('.video__box')) {
+            }
+        }
 
 
     initArticlesSlider();
     initMenu();
     initCopyPromocode();
+    initYoutubeModal();
 })

@@ -42,6 +42,26 @@
     }
 }
 @media (max-width: 1500px) {
+    .blog__banner {
+        padding-right: 12.5rem;
+    }
+    .articles-slider__next, .articles-slider__prev {
+        top: calc(50% - 25px);
+    }
+    .blog__banner::after {
+        top: 36px;
+    }
+    .games {
+        &__item {
+            width: calc(25% - 30px);
+        }
+        &__img img {
+            height: auto;
+        }
+    }
+    .rating {
+        padding-top: 100px;
+    }
     .articles-slider__next {
         right: -60px;
     }
@@ -85,7 +105,7 @@
     }
     .blog {
         &__banner::after {
-            top: 2.5rem;
+            top: 2.2rem;
             font-size: 9.375rem;
         }
     }
@@ -120,11 +140,7 @@
             margin: 20px 0;
         }
     }
-    .games {
-        &__item {
-            width: calc(25% - 30px);
-        }
-    }
+    
     .header {
         &__icons {
             margin-right: 20px;
@@ -176,6 +192,12 @@
 }
 
 @media (max-width: 1024px) {
+    .video__box {
+        height: 450px;
+    }
+    .blog-page .rating {
+        margin-top: 0;
+    }
     .roulette-page {
         .text {
             padding-bottom: 1rem;
@@ -377,6 +399,14 @@
 }
 
 @media (max-width: 768px) {
+    .video__box img {
+        width: 54px;
+        height: 54px;
+    }
+    .blog__img time {
+        bottom: 15px;
+        right: 15px;
+    }
     .images-slider {
         padding-bottom: 2rem;
     }
@@ -451,6 +481,7 @@
     }
     .blog__banner {
         padding: 2rem;
+        padding-right: 70px;
         margin-bottom: 3rem;
     }
     .btn {
@@ -534,7 +565,7 @@
         justify-content: center;
     }
     .video {
-        iframe {
+        &__box {
             height: 250px;
         }
     }

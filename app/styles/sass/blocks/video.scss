@@ -11,4 +11,13 @@
         max-width: 80.625rem;
     }
 
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        background-color: #7d32f4;
+        height: 650px;
+    }
+
 }

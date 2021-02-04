@@ -52,6 +52,7 @@
         box-shadow: 0px 8px 48.14px 9.86px rgba(0, 0, 0, 0.44);
         margin-bottom: 5rem;
         margin-top: 2.5rem;
+        padding-right: 20.5rem;
         &::after {
             position: absolute;
             content: "’’";
@@ -176,7 +177,7 @@
     &__prev,
     &__next {
         position: absolute;
-        top: calc(50% - 50px);
+        top: calc(50% - 43px);
         transform: translateY(-50%);
         outline: none;
         width: 55px;
